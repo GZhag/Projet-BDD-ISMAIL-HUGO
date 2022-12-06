@@ -7,7 +7,7 @@ Introduction
 Ce projet illustre la création d'une base de données sous PostgreSQL en mettant en œuvre les rôles, les vues, les fonctions et les triggers.
 Le dossier 'site' contient un exemple de pages PHP permettant l'interaction avec la base de données.
 
-Un exemple minimal de cahier des charges et de réponse au besoin associé est disponible [ici](./CDC.md).
+Un exemple minimal de cahier des charges et de réponse au besoin associé est disponible ici (./CDC.md).
 
 **Update 2022** : 
 - Images docker : postgres:15.0, php:8.1.12-apache, dpage/pgadmin4:6.15
@@ -29,8 +29,8 @@ L'interface graphique d'administration de la base de données [pgadmin4](https:/
 Modification de la BDD
 ---------------
 
-Modifier le script `simple-course.sql` et re-créer les conteneurs pour que les modifications soient prises en compte. 
-Le script `simple-course.sql` est exécuté automatiquement au lancement de l'application.
+Modifier le script `.sql` et re-créer les conteneurs pour que les modifications soient prises en compte. 
+Le script `.sql` est exécuté automatiquement au lancement de l'application.
 
 Il est conseillé de d'abord tester les blocs de code SQL dans un terminal ou via **PgAdmin4** afin de s'assurer qu'ils soient corrects.
 
