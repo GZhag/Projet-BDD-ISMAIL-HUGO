@@ -2,80 +2,77 @@
 
 ## Titre 
 
-"Réalisation d'une application Web pour la gestion des enseignements et des emplois du temps pour l'Université Pierre-Marie."
+"Réalisation d’une application web pour la documentation de détails sur les clients les ventes et le stock d’un agriculteur exportateur de safran."
 
 ## Contexte (ou Introduction)
 
-L'Université Pierre-Marie de Saint-Martin-la-Plaine a été créée en janvier de l'an 1890. Aujourd'hui, elle compte un peu plus de 500 étudiants et 28 enseignants. L'Université a vu ses effectifs augmenter de 70% ces 10 dernières années et les membres du personnel administratif rencontrent de nombreuses difficultés dans l'organisation des cours et des emplois du temps.
+Ahmed est un agriculteur de safran Marocain qui possède une entreprise d’export  vers l’étranger appelée SCorp. Il vend son safran en poudre ou en stigmates. Grâce à la très bonne qualité de son produit,  le nombre de commandes et de clients a grandement augmentés . Il rencontre ainsi des difficultés à bien noter sur papier les informations sur ses clients étrangers et son business d’exportation à cause du volume important. Par conséquent , il souhaite avoir toutes les informations concernant son stock, ses clients étrangers et ses ventes enregistrées proprement quelque part pour mieux gérer son business et lui faciliter la vie .
 
 Le contexte est donc celui de la gestion des cours et des emplois du temps que l'Université Pierre-Marie de Saint-Martin-la-Plaine souhaiterait améliorer.
 
 ## Problématiques
 
-Moins de dix personnes sont en charge de la gestion administrative de l'Université et une seule personne est en charge (à mi-temps) des emplois du temps (Monsieur Robert). Monsieur Robert doit aujourd'hui faire de nombreuses heures supplémentaires pour parvenir à finaliser ses emplois du temps et à satisfaire l'ensemble du coprs enseignant.
+Ahmed est le seul gérant de son commerce de safran vers le marché interne et étranger . Il remarque qu’il a des soucis d’organisation et de lisibilité avec sa manière traditionnelle de gestion . Ce qui le pousse à exprimer plusieurs problématiques:
 
-Plusieurs problématiques se posent donc aujourd'hui et voici les plus critiques : 
-* Comment gérer efficacement le listing des étudiants et des enseignants ?
-* Comment gérer efficacement les cours dispensés et éviter les redondances ?
-* Comment accélérer la création et la modification des emplois du temps afin de satisfaire, tant que faire se peut, aux besoins des enseignants ?
+- Problème de changement de stock en permanence . Suivre le changement de son stock est essentiel .
+- Mauvaise organisation sur papier avec le grand nombre de clients.
+- Difficulté de se rappeler des clients les plus fidèles .
 
 
 ## Besoins
 
-Des quelques problématiques décrites ci-dessus, on peut en déduire les besoins principaux besoins du système qui ne allons mettre en place. Les voici : 
+- La liste de tous ses clients ainsi que leur nombre d’achat pour voir leur fiabilité
+- La liste de chacune des ventes et de leur détail
+- Les données de son stock actuel
+- Sa production/Vente par année
 
-* Lors des inscriptions en début d'année, pouvoir facilement inscrire un nouvel étudiant en n'oubliant aucune information ;
-* Lors des quadriennals durant lequel les programmes sont refondus, pouvoir définir selon un formalisme durable dans le temps, la description des différents enseignements ;
-* Pouvoir facilement créer un emploi du temps et accélérer les modifications tout en évitant les conflits.
-
-**Contraintes particulières**
-* La solution devra pouvoir fonctionner dans un environnement GNU/LINUX.
-* La solution devra être accessible depuis une interface Web.
+> **Contraintes particulières**
+> 
+- La solution devra être accessible depuis une interface Web.
+- Elle devra fonctionner dans un environnement WINDOWS.
 
 ## Livrables
 
 2 livrables sont attendus :
-* La solution _packagée_ dans des conteneurs type Docker
-* La documentation contenant les précédures d'installation et de déploiement, le guide utilisateur et le guide administrateur.
+
+- La solution *packagée* dans des conteneurs type Docker
+- La documentation contenant les procédures d'installation et de déploiement, le guide utilisateur et le guide administrateur.
+- La solution devra fonctionner sur un serveur local.
 
 # Réponse au besoin
 
 ## Solutions
 
-Pour répondre à ce besoin, notre société a la solution ! Fort de 50 ans d'expérience dans les bases de données, nous savons précisément quelles solutions mettre en place pour transformer votre Université en une véritable machine digitale.
+Pour répondre aux besoins de Ahmed , nous avons identifié les solutions fonctionnelles et techniques adequates pour une gestion plus facile et rapide d’un commerce d’export.
 
 ### Solutions fonctionnelles
 
-Voici les fonctionnalités qui seront offertes par l'application :
-* Un système de gestion d'inscriptions dôté d'une intelligence capable de vérifier chacune des informations entrée et de vous proposer des solutions ;
-* Un système de gestion des programmes pédagogiques ;
-* Un système de gestion des emplois du temps permettant à chacun de demander une modification et d'avoir en temps réel une réponse de principe.
+- Possibilité de contrôler le restant du stock de produit qui se met à jour automatiquement.
+- Système de gestions de clients et de leurs  commandes.
+- Un classement de clients basé sur leurs nombre de commandes pour prioriser les plus fidèles.
 
 ### Solutions techniques
 
-D'un point de vue technique, nous proposons d'intégrer des technologies éprouvées, performantes et peu onéreuses : 
-
-* Une base de données PostgreSQL pour la gestion et la manipulation des données. PostgreSQL est une base de données libre, sans coût de licence, et elle existe depuis plus de 20 ans
-* Serveur Web Apache pour la délivrance des pages Web. Apache est aujourd'hui le serveur le plus populaire et dispose de nombreux modules.
-* PHP pour la génération dynamique de pages web. PHP est un Langage simple et rapide à mettre en oeuvre pour la création de site web. Bibliothèques très fournies.
-* Docker pour le packaging de l'application dans un environnement maîtrisée et cloisonné.
+- Le langage PHP pour la génération dynamique de la page web.
+- Docker pour le packaging de l'application dans un environnement maîtrisée et cloisonné.
+- Serveur Web Apache pour la délivrance des pages Web.
+- Une base de données PostgreSQL pour la gestion et la manipulation des données.
 
 # Livrables
 
-Le livrable est un environnement _Docker_ contenant l'ensemble des services, base de données et IHMs. Le livrable pourra s'installer sur une machine GNU/Linux avec _Docker_ et _docker-compose_ installés.
+- Un environnement *Docker* contenant l'ensemble des services, base de données et IHMs. Le livrable pourra s'installer sur une machine WINDOWS avec *Docker* et *docker-compose* installés.
+- Un fichier [README](https://github.com/vincentmartin/demo-postgresql-php/blob/master/README.md) décrit la procédure d'installation de l'application.
 
-Le fichier [README](./README.md) décrit la procédure d'installation de l'application. 
+Les mises à jour se font en téléchargeant la dernière version de l'application sur *github*. Lors des mises à jours, l'administrateur du système devra suivre la procédure suivante :
 
-Les mises à jour se font en téléchargeant la dernière version de l'application sur _github_. Lors des mises à jours, l'administrateur du système devra suivre la procédure suivante :
-- Stopper les services 
-```
-docker-compose down
-```
+- Stopper les services
+    
+    `docker-compose down`
+    
 - Télécharger les mises à jours
-```
-git pull
-```
+    
+    `git pull`
+    
 - Redémarrer les services
-```
-docker-compose up
-```
+    
+    `docker-compose up`
